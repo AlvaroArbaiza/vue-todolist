@@ -59,6 +59,10 @@ createApp({
       
       // Pusho il nuovo oggetto
       this.todos.push(newElement)
+    },
+
+    remove(i) {
+      this.todos.splice( i, 1 )
     }
   }
 }).mount('#app')
