@@ -34,7 +34,7 @@
                 <section>
                     <div class="container bg-white buttons mb-2 p-2">
 
-                        <input type="text" id="inputText" v-model="inpuText">
+                        <input @keyup.enter="pushInput" type="text" id="inputText" v-model="inpuText">
                         <button @click="pushInput">Crea ToDoList</button>
 
                         <!-- Alert in caso di errore -->
