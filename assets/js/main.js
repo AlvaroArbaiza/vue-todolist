@@ -24,6 +24,7 @@ createApp({
   data() {
     return {
       
+      booleano: true,
       inpuText: '',
       todos: [
         {
@@ -49,7 +50,15 @@ createApp({
   /* ----------------- METHODS ----------------- */
   methods: {
     pushInput() {
-      this.todos.push(this.inpuText);
+
+      // Nuovo oggetto con il valore di inpuText
+      let newElement = {
+        text: this.inpuText,
+        done: false
+      };
+      
+      // Pusho il nuovo oggetto
+      this.todos.push(newElement)
     }
   }
 }).mount('#app')

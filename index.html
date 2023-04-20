@@ -44,7 +44,9 @@
                         <ul>
                             <li v-for="(element, index) in todos" :key="index" 
                             class="d-flex justify-content-between">
-                                <p>{{ element.text }}</p>                                
+                                <p :class="element.done == true ? 'text-decoration-line-through' : '' ">
+                                    {{ element.text }}
+                                </p>                                
                                 <span class="fw-bold">X</span>
                             </li>
                             
