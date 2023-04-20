@@ -24,6 +24,7 @@ createApp({
   data() {
     return {
       
+      error: false,
       booleano: true,
       inpuText: '',
       todos: [
@@ -57,8 +58,16 @@ createApp({
         done: false
       };
       
-      // Pusho il nuovo oggetto
-      this.todos.push(newElement)
+      // Se inpuText non è vuoto e la sua lunghezza è maggiore di 5
+      if( this.inpuText != '' && this.inpuText.length > 5) {
+
+        // Pusho il nuovo oggetto
+        this.todos.push(newElement);
+        this.error = false;
+      } else {
+
+        this.error = true;
+      }
     },
 
     remove(i) {
