@@ -70,14 +70,14 @@ createApp({
       }
     },
 
+    // Funzione per rimuovere i todos
     remove(i) {
       this.todos.splice( i, 1 );
     },
 
+    // Funzione per sbarrare i todos
     checked(i) {
 
-      console.log(this.todos[i].done)
-        
       if(this.todos[i].done != true) {
 
         this.todos[i].done = true
