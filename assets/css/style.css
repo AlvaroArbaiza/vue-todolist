@@ -1,0 +1,123 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+li {
+    list-style-type: none;
+}
+
+header {
+    padding: 5px 20px;
+}
+h1 {
+    display: inline-block;
+    vertical-align: 35%;
+}
+
+body {
+    background-color: rgb(246, 248, 249);
+}
+
+main {
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+.list {
+    line-height: 40px;
+    margin-bottom: 20px;
+}
+
+.list,
+.buttons {
+    width: 60%;
+    margin: 0 auto;
+    padding: 1% 5%;
+ }
+
+hr {
+    border: 2px solid rgb(246, 248, 249);
+}
+
+.bg-white {
+    background-color: white;
+}
+
+.bd-rounded {
+    border-radius: 5px;
+    color: rgb(204, 209, 214);
+    border: 1px solid rgb(204, 209, 214) ;
+    padding: 5px;
+ }
+
+.bd-rounded:hover {
+    background-color: rgb(70, 173, 241);
+    color: white;
+    border: 1px solid white;
+ }
+
+h2:before {
+    content: "\23F7";
+}
+
+.category::after {
+    font-size: 12px;
+    border: none;
+    border-radius: 15px;
+    padding: 4px 8px;
+    text-align: center;
+    color: white;
+}
+
+.editorial::after {
+    content: 'Editorial';
+    background-color: rgb(69, 171, 234);
+}
+
+.q1-goals::after {
+    content: 'Q1Goals';
+    background-color: rgb(156, 114, 228);
+}
+
+.recruiting::after {
+    content: 'Recruiting';
+    background-color: rgb(100, 192, 169);
+}
+
+.mobile::after {
+    content: 'Mobile';
+    background-color: rgb(242, 158, 51);
+}
+
+.website::after {
+    content: 'Website';
+    background-color: rgb(216, 99, 161);
+}
+
+.sales::after {
+    content: 'Sales';
+    background-color: rgb(176, 201, 38);
+}
+
+.check::before {
+    content: "\2713";
+    padding: 2px 4px;
+    border: 2px solid rgb(114, 198, 178);
+    font-size: 12px;
+    font-weight: bolder;
+    border-radius: 50%;
+    color: rgb(114, 198, 178);
+}
+
+.not-check::before {
+    content: "\2573";
+    padding: 4px 5px;
+    border: 2px solid rgb(232, 63, 55);
+    font-size: 8px;
+    font-weight: bolder;
+    border-radius: 50%;
+    color: rgb(232, 63, 55);
+}

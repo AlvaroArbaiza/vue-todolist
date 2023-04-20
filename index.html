@@ -17,12 +17,77 @@
 <body>
 
     <div id="app">
-
         <div class="container">
-           
-            
-        </div>
 
+            <!-- Titolo e logo -->
+            <header class="bg-white">
+                <img src="./assets/img/Logo.png" alt="logo">
+                <h1>Toboolist</h1>
+            </header>
+
+            <main>
+                <!-- Buttons -->
+                <section class="bg-white buttons">
+                    <button class="bd-rounded bg-white">
+                        Add Task
+                    </button>
+                    <button class="bd-rounded bg-white">
+                        Add Section
+                    </button>
+                </section>
+                <hr>
+                
+                <!-- Lists -->
+                <section class="bg-white list">
+                    <!-- New task -->
+                    <div>
+                        <h2>New Task</h2>
+                        <ul>
+                            <li class="check category editorial">
+                                Quarterly Newsletter
+                            </li>
+                            
+                        </ul>
+                    </div>
+                    <!-- Today -->
+                    <div>
+                        <h2>Today</h2>
+                        <ul>
+                            <li class="check category editorial">
+                                Recruiting blog post
+                            </li>
+                            <li class="check category q1-goals">
+                                Mobile app launch
+                            </li>
+                            <li class="not-check category recruiting">
+                                Interview John H.
+                            </li>
+                            <li class="check category mobile">
+                                Summit update to mobiile storefronts
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- Upcoming -->
+                    <div>
+                        <h2>Upcoming</h2>
+                        <ul>
+                            <li class="not-check">
+                                Schedule meeting with Alex
+                            </li>
+                            <li class="check category website">
+                                Homepage refresh
+                            </li>
+                            <li class="check category sales">
+                                Onboard new Sales team members
+                            </li>
+                            <li class="check category editorial">
+                                Review editorial calendar
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+            </main>
+        </div>
     </div>
 
     <script src='https://unpkg.com/vue@3/dist/vue.global.js'></script>
