@@ -24,6 +24,7 @@ createApp({
   data() {
     return {
       
+      inpuText: '',
       todos: [
         {
           text: 'Fare i compiti',
@@ -47,6 +48,8 @@ createApp({
 
   /* ----------------- METHODS ----------------- */
   methods: {
-    
+    pushInput() {
+      this.todos.push(this.inpuText);
+    }
   }
 }).mount('#app')
