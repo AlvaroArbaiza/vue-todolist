@@ -71,7 +71,21 @@ createApp({
     },
 
     remove(i) {
-      this.todos.splice( i, 1 )
+      this.todos.splice( i, 1 );
+    },
+
+    checked(i) {
+
+      console.log(this.todos[i].done)
+        
+      if(this.todos[i].done != true) {
+
+        this.todos[i].done = true
+      } else {
+
+        this.todos[i].done = false
+      }
+
     }
   }
 }).mount('#app')

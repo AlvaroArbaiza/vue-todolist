@@ -60,7 +60,8 @@
                             <li v-for="(element, index) in todos" 
                             :key="index" 
                             class="d-flex justify-content-between">
-                                <p :class="element.done == true ? 'text-decoration-line-through' : '' ">
+                                <p :class="element.done == true ? 'text-decoration-line-through' : '' "
+                                @click="checked(index)">
                                     {{ element.text }}
                                 </p>                                
                                 <i @click="remove(index)" class="bi bi-x-circle"></i>
