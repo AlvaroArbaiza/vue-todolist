@@ -18,11 +18,11 @@
 <body>
 
     <div id="app">
-        <div class="container">
+        <div class="container mt-3">
 
             <!-- Titolo e logo -->
             <header>
-                <div class="container bg-white d-flex align-items-center p-2">
+                <div class="container rounded justify-content-center d-flex align-items-center p-2">
 
                     <img class="img-fluid" src="./assets/img/Logo.png" alt="logo">
                     <h1 class="ms-2 text-uppercase fw-semibold">toboolist</h1>
@@ -32,9 +32,9 @@
             <main class="mt-5">
                 <!-- Buttons -->
                 <section>
-                    <div class="container bg-white buttons mb-2 p-2">
+                    <div class="container bg-white buttons rounded mb-2 p-2">
 
-                        <div>
+                        <div class="justify-content-center d-flex">
                             
                             <!-- Input - Inserisci testo -->
                             <input @keyup.enter="pushInput" type="text" id="inputText" v-model="inpuText">
@@ -61,7 +61,7 @@
                 
                 <!-- Lists -->
                 <section>
-                    <div class="container bg-white list p-2">
+                    <div class="container rounded bg-white list p-2">
 
                         <!-- Todos -->
                         <ul class="px-5">
@@ -78,7 +78,7 @@
                                 <div class="d-flex align-items-center">
 
                                     <!-- Checkbox -->
-                                    <input type="checkbox" @click="checked(index)" class="me-4">                               
+                                    <input type="checkbox" v-model="element.done" class="me-4">                               
                                     <!-- Remove Icon -->
                                     <i @click="remove(index)" class="bi bi-x-circle"></i>
                                 </div>
